@@ -10,3 +10,4 @@ File 7-movethatfile moves the file betty from /tmp/ to /tmp/my_first_directory.
 File 8-firstdelete deletes the file betty.
 File 9-firstdirdeletion deletes the directory my_first_directory that is in the /tmp directory.
 File 10-back changes the working directory to the previous one.
+File 11-lists lists all files (even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent of the working directory and the /boot directory (in this order), in long format.
