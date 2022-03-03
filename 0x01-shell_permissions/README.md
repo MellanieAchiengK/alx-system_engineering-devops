@@ -11,3 +11,4 @@ File 8-James_Bond ets the permission to the file hello as follows:
 Owner: no permission at all
 Group: no permission at all
 Other users: all the permissions
+File 9-John_Doe sets the mode of the file hello to u = read,write, execute, g = read, execute & o = writ, execute
