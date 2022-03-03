@@ -14,3 +14,4 @@ Other users: all the permissions
 File 9-John_Doe sets the mode of the file hello to u = read,write, execute, g = read, execute & o = writ, execute
 File 10-mirror_permissions sets the mode of the file hello the same as olleh’s mode
 File 11-directories_permissions adds execute permission to all subdirectories of the current directory for the owner, the group owner and all other users without changing regular files
+File 12-directory_permissions creates a directory called my_dir with permissions 751 in the working directory.
