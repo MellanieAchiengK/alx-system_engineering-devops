@@ -21,3 +21,4 @@ File 18-letteronly displays all lines of the file /etc/ssh/sshd_config starting 
 File 19-AZ replaces all characters A and c from input to Z and e respectively
 File 20-hiago removes all letters c and C from input
 File 21-reverse reverses its input
+File 22-users_and_homes displays all users and their home directories, sorted by users
