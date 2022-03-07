@@ -14,3 +14,4 @@ File 11-directories counts the number of directories and sub-directories in the 
 File 12-neweat_files Create a script that displays the 10 newest files in the current directory sorted from newest to oldest. One file per line.
 File 13-unique takes a list of words as input and prints only words that appear exactly once
 File 14-findthatword displays lines containing the pattern “root” from the file /etc/passwd
+File 15-countthatword displays the number of lines that contain the pattern “bin” in the file /etc/passwd
