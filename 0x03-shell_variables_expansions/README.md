@@ -9,3 +9,4 @@ File 6-create_local_variable creates a new local variable name BEST with the val
 File 7-create_global_variable creates a new global variable.
 File 8-true_knowledge prints the result of the addition of 128 with the value stored in the environment variable TRUEKNOWLEDGE
 File 9-divide_and_rule prints the result of POWER divided by DIVIDE
+File 10-love_exponent_breath displays the result of BREATH to the power LOVE
