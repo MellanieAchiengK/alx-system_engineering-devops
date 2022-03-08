@@ -5,3 +5,5 @@ File 2-path adds /action to the end of PATH
 File 3-paths counts the number of directories in the PATH
 File 4-global_variableslists environment variables.
 File 5-local_variables lists all local variables and environment variables, and functions
+File 6-create_local_variable creates a new local variable name BEST with the value School
+File 7-create_global_variable creates a new global variable.
