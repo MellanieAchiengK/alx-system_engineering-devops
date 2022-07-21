@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# This script prints "Best School" 8 times, prints "bad luck" for 4th loop, "good luck" for the 8th loop.
+
+a=0
+
+while [ $a -lt 10 ]
+do
+	if [ $a -eq 3 ]
+	then
+		echo "bad luck"
+	elif [ $a -eq 7 ]
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi	
+	(( a++ ))
+done

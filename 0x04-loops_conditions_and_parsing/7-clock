@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# This script prints numbers 1-20, with additional message on iterations 4, 9 & 17
+
+hour=0
+
+while [ $hour -le 12 ]
+do
+	echo "Hour: $hour"
+	min="1"
+	while [ $min -lt 60 ]
+	do
+		echo "$min"
+		((min++))
+	done
+	((hour++))
+done
