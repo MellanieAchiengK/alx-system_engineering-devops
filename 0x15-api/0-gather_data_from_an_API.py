@@ -1,25 +1,24 @@
 #!/usr/bin/python3
-""" use REST API to return TODO list informatio """
+"""
+Uses the JSON placeholder api to query data about an employee
+"""
 
-import requests
-import sys
+from requests import get
+from sys import argv
 
-if __name__ == "__main__":
+if __name__ == '__main__':
+    main_url = 'https://jsonplaceholder.typicode.com'
+    todo_url = main_url + "/user/{}/todos".format(argv[1])
+    name_url = main_url + "/users/{}".format(argv[1])
+    todo_result = get(todo_url).json()
+    name_result = get(name_url).json()
 
-    employee = requests.get("https://jsonplaceholder.typicode.com/users/{}"
-                        .format(sys.argv[1]))
-
-    name = employee.json().get('name')
-
-    todos = requests.get('https://jsonplaceholder.typicode.com/todos')
-    todos_response = todos.json()
-    
-    totalTasks = len(todos_response)
-    completed = len([todos for todos in todos_response
-                         if todos.get("completed")])
-
-    print('Employee {} is done with tasks({}/{}):'
-          .format(name, completed, totalTasks))
-    for task in todos.json():
-        if (task.get("completed")):
-            print("\t {}".format(task.get("title")))
+    todo_num = len(todo_result)
+    todo_complete = len([todo for todo in todo_result
+                         if todo.get("completed")])
+    name = name_result.get("name")
+    print("Employee {} is done with tasks({}/{}):"
+          .format(name, todo_complete, todo_num))
+    for todo in todo_result:
+        if (todo.get("completed")):
+            print("\t {}".format(todo.get("title")))
